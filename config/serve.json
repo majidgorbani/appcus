@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://titta.sharepoint.com/sites/modern01",
+      "customActions": {
+        "602ed136-9a3c-4ad2-8971-6610c6e51d44": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message",
+            "Top": "this is the top",
+            "Botton" : "this is the button"
+          }
+        }
+      }
+    },
+    "appcust": {
+      "pageUrl": "https://titta.sharepoint.com/sites/modern01",
+      "customActions": {
+        "602ed136-9a3c-4ad2-8971-6610c6e51d44": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
