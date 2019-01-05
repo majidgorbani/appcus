@@ -43,6 +43,7 @@ export default class AppcustApplicationCustomizer
 
     return Promise.resolve<void>();
   }
+
   private _onDispose(): void{
     console.log('Dispose was called');
 
@@ -92,5 +93,5 @@ export default class AppcustApplicationCustomizer
 
     }
 
-  }
+  } //
 }
